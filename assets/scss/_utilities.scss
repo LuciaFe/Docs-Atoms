@@ -1,0 +1,54 @@
+@layer base {
+  .padded {
+    @apply px-4 md:px-9 lg:px-16;
+  }
+  .gapped {
+    @apply gap-2 sm:gap-4 lg:gap-6;
+  }
+  .boxed {
+    @apply max-w-boxed;
+  }
+  .grid-standard {
+    @apply gapped padded grid grid-cols-8 md:grid-cols-12;
+  }
+}
+
+@mixin wrapper-image-screen {
+  .app-picture,
+  .relative,
+  img {
+    @apply h-screen;
+  }
+
+  img {
+    @apply object-cover object-top;
+  }
+}
+
+@mixin wrapper-image-full {
+  .app-picture,
+  .relative,
+  img {
+    @apply h-full;
+  }
+
+  img {
+    @apply object-cover object-top;
+  }
+}
+
+.wrapper-image-screen {
+  @include wrapper-image-screen;
+}
+
+.wrapper-image-full {
+  @include wrapper-image-full;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

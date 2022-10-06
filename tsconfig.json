@@ -1,0 +1,8 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": ["@pinia/nuxt", "unplugin-icons/types/vue", "node"],
+    "strictNullChecks": true
+  }
+}

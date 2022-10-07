@@ -7,7 +7,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "typecheck": "nuxi typecheck",
-    "generate-gql": "graphql-codegen"
+    "generate-gql": "graphql-codegen",
+    "histoire": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
   },
   "devDependencies": {
     "@atoms-studio/components": "edge",
@@ -17,6 +20,8 @@
     "@formkit/nuxt": "^1.0.0-beta.11",
     "@graphql-eslint/eslint-plugin": "^3.10.3",
     "@headlessui/vue": "^1.5.0",
+    "@histoire/plugin-nuxt": "^0.11.2",
+    "@histoire/plugin-vue": "^0.11.2",
     "@mdx-js/preact": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "@nuxtjs/tailwindcss": "^5",
@@ -43,6 +48,7 @@
     "fs-extra": "^10.0.1",
     "graphql": "^16.4.0",
     "graphql-config": "^4.3.0",
+    "histoire": "^0.11.2",
     "nuxt": "^3.0.0-rc.11",
     "nuxt-lodash": "^2.1.1",
     "pathe": "^0.2.0",
@@ -61,6 +67,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
+    "@storybook/addon-docs": "^6.5.12",
     "vue-social-sharing": "^4.0.0-alpha4"
   }
 }

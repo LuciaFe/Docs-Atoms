@@ -1,3 +1,4 @@
 export type HelloProps = {
-  text: string
+  title: string
+  subtitle: string
 }

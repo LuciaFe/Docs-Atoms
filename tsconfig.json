@@ -3,6 +3,7 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "types": ["@pinia/nuxt", "unplugin-icons/types/vue", "node"],
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsx": "preserve"
   }
 }

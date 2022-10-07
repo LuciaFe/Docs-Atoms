@@ -1,10 +1,16 @@
 import Hello from "./Hello.vue"
 import { HelloProps } from "./Hello.props"
+import docs from "./Hello.mdx"
 
 export default {
   title: "Atoms/Hello",
   component: Hello,
   argTypes: {},
+  parameters: {
+    docs: {
+      page: docs,
+    },
+  },
 }
 
 const Template = (args) => ({
@@ -22,5 +28,6 @@ const Template = (args) => ({
 
 export const Primary = Template.bind({}) as StorybookTemplateType<HelloProps>
 Primary.args = {
-  text: "Welcome on board!",
+  title: "Welcome on board!",
+  subtitle: "Try this",
 }
